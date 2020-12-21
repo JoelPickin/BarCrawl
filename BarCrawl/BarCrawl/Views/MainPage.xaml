@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BarCrawl.Views.MainPage"
+             Title="{Binding Title}">
+
+    <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <Label Text="Pub Crawk The App!" HorizontalOptions="Center"/>
+
+        <StackLayout>
+            <Label Text="Location"/>
+            <Entry Text="{Binding Location}"/>
+        </StackLayout>
+
+        <StackLayout>
+            <Label Text="Crawl Date"/>
+            <DatePicker Date="{Binding Date}"/>
+        </StackLayout>
+
+        <StackLayout>
+            <Label Text="Start Time"/>
+            <TimePicker Time="{Binding StartTime}"/>
+            <Label Text="End Time"/>
+            <TimePicker Time="{Binding EndTime}"/>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
