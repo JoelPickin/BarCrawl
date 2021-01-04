@@ -5,11 +5,11 @@
              Title="{Binding Title}">
 
     <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-        <Label Text="Pub Crawk The App!" HorizontalOptions="Center"/>
+        <Label Text="Pub Crawl The App!" HorizontalOptions="Center"/>
 
         <StackLayout>
             <Label Text="Location"/>
-            <Entry Text="{Binding Location}"/>
+            <Entry Text="{Binding Location, Mode=TwoWay}"/>
         </StackLayout>
 
         <StackLayout>
@@ -22,6 +22,10 @@
             <TimePicker Time="{Binding StartTime}"/>
             <Label Text="End Time"/>
             <TimePicker Time="{Binding EndTime}"/>
+        </StackLayout>
+
+        <StackLayout>
+            <Button Text="Create!" Command="{Binding CreatePubCrawlCommand}"/>
         </StackLayout>
     </StackLayout>
 
